@@ -31,7 +31,7 @@ inverteString :: String -> String
 inverteString [] = []
 inverteString (head:tail) = inverteString tail ++ [head]
 
--- 4
+-- 4 - use map on terminal hugs
 squares :: Int -> Int
 squares x = x*x
 
@@ -39,16 +39,16 @@ squares x = x*x
 cartesiano :: [Int] -> [Int] -> [(Int, Int)]
 cartesiano lista1 lista2 = [(x, y) | x <- lista1, y <- lista2] ++ [(y, x) | y <- lista2, x <- lista1]
 
--- 6
+-- 6 - use filter
 positives :: Int -> Bool
 positives x
     | x > 0 = True
     | otherwise = False
 
--- 7
+-- 7 - use foldr1
 sumDouble :: Int -> Int -> Int
 sumDouble x y = 2*x + 2*y
 
--- 8
+-- 8 - use foldr1
 concatena :: String -> String -> String
 concatena str1 str2 = str1 ++ str2

@@ -75,7 +75,7 @@ removeMenor (head:tail) x
 
 ordena :: [Int] -> [Int]
 ordena [] = []
-ordena lista = buscaMaior lista : ordena (removeMenor lista (buscaMaior lista))
+ordena lista = buscaMenor lista : ordena (removeMenor lista (buscaMenor lista))
 
 -- 8
 repeteElemento :: [Int] -> [Int]

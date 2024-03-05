@@ -1,0 +1,1 @@
+This repository has the exercises I did to practice functional programming using the Haskell language. All the solutions were made by my reasoning.
